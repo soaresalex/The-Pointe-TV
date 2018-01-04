@@ -1,0 +1,259 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+@media only screen and (max-width: 800px) {
+/* ---------- NAVIGATION START---------- */
+#navbar {
+    background: #23282D;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+#navbar .col-sm-1 {
+    width: 100%;
+    text-align: center;
+}
+#navbar .col-sm-1 img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+#navbar .col-sm-3 {
+    display: none;
+}
+#navbar ul {
+    display: none;
+}
+/* ---------- NAVIGATION END ---------- */
+
+/* ---------- HEADER START ---------- */
+#player {
+    width: 100%;
+    height: 300px;
+    pointer-events: none;
+}
+#header {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background: #000;
+    margin-top: 130px;
+}
+/* ---------- HEADER END ---------- */
+	
+/* ---------- ABOUT START ---------- */
+#about {
+    padding: 40px 15px;
+    background: #23282D;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 2.0;
+}
+#about .container .col-sm-6 {
+    padding: 0;
+}
+#about .col-sm-12 {
+    padding: 30px 0 0 0;
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+table {
+    width: 100%;
+    margin-top: 50px;
+}
+table tr td {
+    padding-bottom: 30px;
+}
+table tr td:nth-child(odd) {
+    text-align: left;
+    padding-right: 0;
+}
+/* ---------- ABOUT END ---------- */
+
+/* ---------- VIDEOS START ---------- */
+#videos .container .col-sm-12:nth-child(3) {
+    display: none;
+}
+#videos iframe {
+    width: 100%;
+    height: auto;
+}
+#videos {
+    padding-bottom: 100px;
+}
+/* ---------- VIDEOS END ---------- */
+
+
+/* ---------- CAST START ---------- */
+#cast .container {
+    padding: 0;
+    margin: 0;
+}
+#cast .container-fluid:nth-child(2) {
+    margin-top: 120px;
+    padding: 20px 0;
+}
+#cast .container-fluid:nth-child(2) a {
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0;
+}
+#cast .container-fluid:nth-child(2) a:hover {
+    color: #F5AE08;
+}
+#cast .container-fluid:nth-child(2) .col-sm-3 {
+    background: #23282D;
+    border: 1px solid #FFF;
+    margin: 0;
+    padding: 15px 30px;
+}
+#cast .container-fluid:nth-child(2) img {
+    display: none;
+}
+#cast h1 {
+    border: 0;
+}
+#cast h2 {
+    font-size: 16px;
+}
+/* ---------- CAST END ---------- */
+	
+	/* ---------- MOBILE MENU START ---------- */
+#menu {
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 9999;
+    background: #19A8F0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.line {
+    width: 20px;
+    height: 2px;
+    background: #FFF;
+    color: #FFF;
+    margin: 3px auto;
+    transition: 0.3s;
+}
+.top-slant {
+    -ms-transform: matrix(1, 1, 0, 1, 0, 0); /* IE 9 */
+    -webkit-transform: matrix(1, 1, 0, 1, 0, 0); /* Safari */
+    transform: matrix(1, 1, 0, 1, 0, 5);
+    width: 15px;
+}
+.bottom-slant {
+    -ms-transform: matrix(1, -1, 0, 1, 0, 0); /* IE 9 */
+    -webkit-transform: matrix(1, -1, 0, 1, 0, 0); /* Safari */
+    transform: matrix(1, -1, 0, 1, 0, 0);
+    width: 15px;
+}
+ @keyframes fadeIn {
+ from {
+opacity: 0;
+}
+ to {
+opacity: 1;
+}
+}
+/* ---------- MOBILE MENU END ---------- */
+
+/* ---------- ABOUT CAST AND CREW START ---------- */
+#about-cast-crew .container-fluid:nth-child(2) {
+    background: url(../img/cast-background.jpg)no-repeat top right;
+    padding: 100px 0;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+#about-cast-crew h1 {
+    margin-top: 20px;
+}
+#about-cast-crew .container-fluid:nth-child(2) .container .col-sm-12 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+#about-cast-crew .container-fluid:nth-child(2) .container .col-sm-12 img {
+    width: 200px;
+}
+#about-cast-crew .container-fluid:nth-child(2) .container .col-sm-6:nth-child(2), #about-cast-crew .container-fluid:nth-child(2) .container .col-sm-6:nth-child(3) {
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+#about-cast-crew .container-fluid:nth-child(2) .container .col-sm-6:nth-child(3) {
+    text-align: right;
+}
+/* ---------- ABOUT CAST AND CREW START ---------- */
+
+/* ------- POPUP MENU START ------- */
+#popup-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #23282D;
+    padding-top: 20px;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    z-index: 9999;
+}
+.popup-inner-menu {
+    margin: auto;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+.popup-inner-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.popup-inner-menu a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 24px;
+    transition: 1s;
+}
+.popup-inner-menu a:hover {
+    color: #E6B022;
+}
+.popup-inner-menu li {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.popup-inner-menu img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 50px;
+}
+.popup-inner-menu #logo {
+    width: 200px;
+    height: auto;
+    padding-bottom: 100px;
+}
+/* ------- POPUP MENU END ------- */
+}
